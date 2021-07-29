@@ -1,0 +1,31 @@
+import { Document } from 'mongoose';
+export interface Supplier extends Document {
+  readonly suppId: string;
+  readonly name: string;
+  readonly nickname: string;
+  readonly address: string;
+  readonly tel1a: string;
+  readonly tel1b: string;
+  readonly fax1a: string;
+  readonly fax1b: string;
+  readonly salesPIC: string;
+  readonly salesPICtel1a: string;
+  readonly salesPICtel1b: string;
+  readonly salesPICMobile1a: string;
+  readonly salesPICMobile1b: string;
+  readonly salesPICEmail: string;
+  readonly acctPIC: string;
+  readonly acctPICtel1a: string;
+  readonly acctPICtel1b: string;
+  readonly acctPICMobile1a: string;
+  readonly acctPICMobile1b: string;
+  readonly acctPICEmail: string;
+  readonly tfesPIC: string;
+  readonly delAddress: string;
+  readonly incoterm: string;
+  readonly downPayment: string;
+  readonly gstReq: string;
+  readonly billingCurrent: string;
+  readonly country: string;
+  readonly delCountry: string;
+}

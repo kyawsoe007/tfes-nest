@@ -1,0 +1,35 @@
+import { Document } from 'mongoose';
+export interface Customer extends Document {
+  readonly cusNo: string;
+  readonly name: string;
+  readonly nickname: string;
+  readonly address: string;
+  readonly country: string;
+  readonly tel1a: string;
+  readonly tel1b: string;
+  readonly fax1a: string;
+  readonly fax1b: string;
+  readonly cusPIC: string;
+  readonly cusPICtel1a: string;
+  readonly cusPICtel1b: string;
+  readonly cusPICMobile1a: string;
+  readonly cusPICMobile1b: string;
+  readonly cusPICEmail: string;
+  readonly acctPIC: string;
+  readonly acctPICtel1a: string;
+  readonly acctPICtel1b: string;
+  readonly acctPICMobile1a: string;
+  readonly acctPICMobile1b: string;
+  readonly acctPICEmail: string;
+  readonly billingAddress: string;
+  readonly billingCountry: string;
+  readonly delAddress: string;
+  readonly incoterm: string;
+  readonly creditLimit: string;
+  readonly creditTerm: string;
+  readonly downPayment: string;
+  readonly billingCurrency: string;
+  readonly paymentTerm: string;
+  readonly gstReq: string;
+  readonly salesPic: string;
+}

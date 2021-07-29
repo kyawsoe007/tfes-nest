@@ -1,0 +1,255 @@
+<!DOCTYPE html >
+<html lang ="en" style="zoom:0.6">
+
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta name="viewport" content="width=1024px"> -->
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+        <title>Quotation TFES </title>
+           <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+       <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"  type='text/css>   -->
+    </head>
+    
+<style>
+    
+    body {
+        background: white;
+        font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+        font-size: 12px;
+        -webkit-print-color-adjust: exact;
+    };
+    @media print {
+        body {
+          background: white;
+        }
+        .page {
+          margin: 0;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    h1 {
+        font-size:1.5rem;
+        margin: 0;
+    }
+    h2 {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    h3 {
+        font-size: 1rem;
+        margin: 0;
+    }
+    h4 {
+        font-size: 12px;
+        margin: 0;
+    }
+    p {
+        font-size: 1rem;
+        margin: 0;
+    }
+    td, th {
+        font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+        padding: 4px 5px;
+        font-size: 0.8rem;
+        max-width: 150px;
+        word-wrap:inherit;
+    }
+    td{
+        font-size: 0.65rem;
+    }
+    .header-section-spacing {
+        padding-right: 1rem;
+    }
+    hr { margin: 0.1rem auto; }
+    .spacing-40 {
+        padding : 40px 0;
+    }
+    .spacing-10 {
+        padding : 10px 0;
+    }
+    .spacing-30 {
+        padding : 30px 0;
+    }
+    .spacing-20 {
+        padding : 20px 0;
+    }
+    .spacing-5 {
+        padding : 5px 0;
+    }
+    .spacing-2 {
+        padding : 2px 0;
+    }
+    .tnc {
+        display: inline-block;
+        width: 15%
+    }
+    .font-weight-bold{
+        font-weight: bold;
+    }
+    .side-spacing-8 {
+        padding: 0px 8px;
+    }
+    .text-center{
+        text-align: center; 
+        margin: 0 auto;
+    }
+    .text-left{
+        text-align: left; 
+    }
+    .text-right{
+        text-align: right; 
+        
+    }
+    .debug-border {
+        border: 1px solid red;
+    }
+    .table-border {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    .table-border-collapse {
+        border-collapse: collapse;
+    }
+    .border-left{
+        border-left:1px solid black;
+    }
+    .border-right{
+        border-right:1px solid black;
+    }
+    .border-bottom{
+        border-bottom:2px solid black;
+    }
+    .border-top{
+        border-top:1px solid black;
+    }
+
+    /* Avoid page break in the middle of a row */
+    .avoid {
+        page-break-inside: avoid !important;
+        margin: 4px 0px 4px;
+        padding: 2px 0px 2px;
+    }
+  
+</style>
+
+<body>
+    <!-- <page size="A4"> -->
+        <!-- LOGO AND HSECTION  -->
+
+        <div class="">
+            <img width="10%" src="data:image/png;base64,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" alt="" />
+        </div>
+        <div class="text-right" 
+        style="position: absolute;top:20px;right: 0;">
+            <p class="" style="color: #444;">TF ENERGY SERVICES PTE LTD</p> 
+        </div>
+        <div  style="padding: 0;margin: 0;">
+            <h1 class="spacing-10 text-center">TFES General Ledger</h1> 
+            <table width="100%">
+                <tr>
+                    <td><h2>Start Date:</h2></td>
+                    <td><p><%= startDate%></p></td>
+                    <td width="50%" ></td>
+                    <td><h2>End Date:</h2></td>
+                    <td><p><%= endDate%></p></td>
+
+                </tr>
+            </table>   
+            <hr style= "border-top: 1px solid;">
+        </div>
+
+        
+
+        <!-- INFORMATION SECTION  -->
+       <% if(data && data.length>0){%>
+        <% for(var j = 0; j < data.length; j ++) {%>
+        <% 
+            var totalDebit =0;
+            var totalCredit =0;
+            var totalAmtCurrency =0;
+           for(var i=0;i< data[j].journalItem.length;i++){ 
+                totalDebit += data[j].journalItem[i].debit;
+                totalCredit += data[j].journalItem[i].credit;
+                totalAmtCurrency += data[j].journalItem[i].amountCurrency;
+            } %> 
+        <div class="spacing-10"></div>
+        <div>
+            <h3 class="spacing-5" style="padding-left: 4px;"><%= data[j].account_name%></h3>
+            <table width="100%" class="table-border-collapse">
+                <thead style="display: table-header-group;">
+                   
+                <tr class="border-bottom"  style="page-break-inside: avoid;" >
+                    <th class="table-border" width="10%">Date</th>
+                    <th class="table-border " width="30%">Partner</th>
+                    <th class="table-border" width="11%">Ref</th>
+                    <th class="table-border text-center" width="12%">Name</th>
+                    <th class="table-border" width="10%">Debit</th>
+                    <th class="table-border" width="10%">Credit</th>
+                    <th class="table-border" width="10%">Amt Currency</th>
+                    <th class="table-border" width="7%">Currency</th>
+                </tr> 
+                </thead>
+                <tbody>
+                    <% for(var i = 0; i < data[j].journalItem.length; i ++) {%>
+                    <tr class="text-right"  style="page-break-inside: avoid;" >
+                        <td class="table-border text-center"> 
+                            <div class="avoid"><%= data[j].journalItem[i].entryDate%></</div>
+                        </td>
+                        <td class="table-border text-center ">
+                            <div class="avoid"><%= data[j].journalItem[i].partner%></div>
+                        </td>
+                        <td class="table-border text-center">
+                            <div class="avoid"><%= data[j].journalItem[i].reference %></div>
+                        </td>
+                        <td class="table-border text-center">
+                            <div class="avoid"><%= data[j].journalItem[i].name %></div>
+                        </td>
+        
+                        <td class="table-border">
+                            <div class="avoid"><%=`${data[j].journalItem[i].debit.toLocaleString("en-SG", {style: "decimal", minimumFractionDigits: 2, maximumFractionDigits: 2}) }`  %></div>
+                        </td>
+                        <td class="table-border">
+                            <% if ( typeof data[j].journalItem[i].credit == "number" ) {%>
+                                <div class="avoid"><%=`${data[j].journalItem[i].credit.toLocaleString("en-SG", {style: "decimal", minimumFractionDigits: 2, maximumFractionDigits: 2})}`%></div>
+                            <%}else{%>
+                                <div class="avoid"><%= data[j].journalItem[i].credit %></div>
+                            <%}%>     
+                        </td>
+                        <td class="table-border">
+                            <div class="avoid"><%=`${data[j].journalItem[i].amountCurrency.toLocaleString("en-SG", {style: "decimal", minimumFractionDigits: 2, maximumFractionDigits: 2}) }`  %></div>
+                        </td>
+        
+                        <td class="table-border">
+                            <div class="avoid"><%=`${data[j].journalItem[i].currency}`  %></div>
+                        </td>
+                    </tr>
+                    <% } %>
+                    <tr class="text-right border-bottom" style= "background-color:#cecece !important"  >
+                        <td class="border-left"> </td>
+                        <td class=" "></td>
+                        <td ></td>
+                        <td class="font-weight-bold ">Total:</td>
+                        <td class="table-border "><%= `${totalDebit.toLocaleString("en-SG", {style: "decimal", minimumFractionDigits: 2, maximumFractionDigits: 2})  }` %></td>
+                        <td class="table-border "><%= `${totalCredit.toLocaleString("en-SG", {style: "decimal", minimumFractionDigits: 2, maximumFractionDigits: 2})  }` %></td>
+                        <td class="table-border "></td>
+                        <td class="border-right "></td>
+                    </tr>
+                </tbody>  
+            </table> 
+        </div> 
+        <% } %>
+       <% } %>
+        <div id="pageFooter"></div>
+        <!-- SECTION computer generated signature   -->
+       
+    <!-- </page> -->
+    <!-- <br><br> -->
+</body>
+<script src="" async defer></script>
+</html>

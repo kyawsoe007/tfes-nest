@@ -1,0 +1,52 @@
+import { Document } from 'mongoose';
+
+export interface EmployeeSetting extends Document {
+    // status?: string;
+    number: string;
+    idNumber: string;
+    employmentType: string;
+    remarks: string;
+    gender: string;
+    department: string;
+    user: string;
+    workingYears: string;
+    nickName: string;
+    firstName: string;
+    lastName: string;
+    address: string;
+    phoneNum: string;
+    email: string;
+    emergencyPerson: string;
+    emergencyTel: string;
+    hireDate: Date;
+    issueDate: Date;
+    position: string;
+    passPortNo: string;
+    passType: string;
+    scpr: string;
+    annualLeave: number;
+    remainingAnnualLeave: number;
+    sickLeave: number;
+    remianingSickLeave: number;
+    childcareLeave: number;
+    remainingChildCareLeave: number;
+    inLieuLeave: number;
+    remainingInLieuLeave: number;
+    // maternityLeave: number;
+    // remainingMaternityLeave: number;
+    // paternityLeave: number;
+    // remainingPaternityLeave: number;
+    // sharedPaternityLeave: number;
+    // remainingSharedPaternityLeave: number;
+     leaveCarriedForward: number;
+    // remainingUnpaidLeave: number;
+    reservistLeave: number;
+    remainingReservistLeave: number;
+    cpfFEmployer: string;
+    cpfFEmployee: string;
+    levy: string;
+    sdl: string;
+    allowance: string;
+    basicSalary: string;
+
+}
